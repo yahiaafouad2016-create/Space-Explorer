@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Explorer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px;
+      font-size: 40px;
+      background: linear-gradient(to right, blue, purple);
+    }
+
+    .planet {
+      margin: 30px;
+      padding: 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+
+<header>🚀 Space Explorer</header>
+
+<h2>Choose a Planet</h2>
+
+<div class="planet">
+  <h3>Mars</h3>
+  <p>The red planet!</p>
+  <button onclick="explore('Mars')">Explore</button>
+</div>
+
+<div class="planet">
+  <h3>Jupiter</h3>
+  <p>The giant planet!</p>
+  <button onclick="explore('Jupiter')">Explore</button>
+</div>
+
+<script>
+function explore(planet) {
+  alert("Launching to " + planet + " 🚀");
+}
+</script>
+
+</body>
+</html>
