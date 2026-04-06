@@ -41,7 +41,7 @@
 </head>
 <body>
 
-<header>🚀 Space Explorer</header>
+<header>Space Explorer</header>
 
 <h2>Choose a Planet</h2>
 
@@ -62,6 +62,18 @@ function explore(planet) {
   alert("Launching to " + planet + " 🚀");
 }
 </script>
+<div id="loading" style="display:none; font-size:30px;">
+  🚀 Launching...
+</div>
 
+<script>
+function launch(page) {
+  document.getElementById("loading").style.display = "block";
+  
+  setTimeout(() => {
+    window.location.href = page;
+  }, 2000); // 2 seconds delay
+}
+</script>
 </body>
 </html>
